@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+  int s,i,j=0,count;
+  int a[40];
+  printf("\n Enter the size of array: ");
+  scanf("%d",&s);
+  printf("\n Enter the elements of array :");
+  for(i=0;i<s;i++)
+    {
+      scanf("%d",&a[i]);
+    }
+  for(i=0;i<s;i++)
+     {
+       count=0;
+      for  (j=0;j<s;j++)
+           {
+ 	     if(a[i]==a[j])
+                {
+                  count++;
+		}
+           }
+        printf("\n %d is repeated with the frequency of %d.\n",a[i],count);
+     }
+}
