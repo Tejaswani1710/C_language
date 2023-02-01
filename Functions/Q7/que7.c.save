@@ -1,0 +1,19 @@
+#include<stdio.h>
+int tolower(int a[]);
+int main ()
+{
+  int i;
+  int a[50];
+  printf("\n Enter a string: ");
+  scanf("%s",&a);
+  printf("\n Your lowered string: ", tolower(a));
+}
+ int tolower(int a[])
+ {
+   int i=0;
+   while(a[i]!='\0')
+      {
+	(a[i]>='A' || a[i]<='Z')? ls=a[i]+32 : ls=a[i]+0; 
+      
+ 
+ }
